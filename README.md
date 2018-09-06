@@ -1,6 +1,6 @@
-# FaroeGuide
+# Faroe Islands Tour Guide Application
 
-FaroeIslandsTourGuide is an Android app, designed for easy exploration of attractions in Faroe Islands.
+FaroeIslandsTourGuide is an Android application, designed for easy exploration of attractions in Faroe Islands.
 The app can be easily configured to show information about other cities by simply modifying the JSON file from which the data is read.
 
 ### Highlights
