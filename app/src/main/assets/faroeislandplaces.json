@@ -1,0 +1,759 @@
+{
+  "Categories": [
+    {
+      "Fun": [
+        {
+          "category_id": 1,
+          "category_name": "Hiking",
+          "category_bg_color": "",
+          "category_thumbnail": "hiking",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Villingardalsfjall",
+              "activity_thumbnail": "hiking_villingardalsfjall",
+              "activity_details": "The Faroe Islands is a hiker’s dream paradise given all of its majestic pure magnificence comprising of steep cliffs, grand mountains, and unspoilt terrains. The mountain of Villingardalsfjall  is the 3rd largest in the entire Faroese archipelago Islands. Villingardalsfjall is located in Viðoy which is the northern-most island in the Faroe Islands. If you’re coming from the main city of Tórshavn by car, just set your GPS to go for the route towards the gorgeous ancient settlement of Viðareiði in order to reach the start of the hiking trail.",
+              "activity_teaser_text": "Experience the beautiful mountain scenery in the north and enjoy one of the Faroe Islands’ most beautiful villages from above",
+              "activity_website": "https://visitfaroeislands.com/place/villingardalsfjall/",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "Duration: 3-4 hours\nDistance: 6 kilometers 3.7 miles\nDifficulty: Moderate. The hike up is fairly difficult, and in the last part of the trail, there are many rocks and a steep cliff (take caution as there can be loose stones)\nMaximum height: 841 meters\nChildren: Not suitable for small children under 7-8 years old\nSurface: First section is mostly a grass trail, followed by a path of stones and rocks\nTrail Mark/Guide: Simply follow the blue plastic tubes that stick out of the ground",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "Tórshavn Kirkjubøur",
+              "activity_thumbnail": "hiking_kirkjubour",
+              "activity_teaser_text": "A nice trip along the old mountain path to the beautiful old village of Kirkjubøur",
+              "activity_details": "The route starts at the crossroads Landavegur – Velbastaðvegur. From there, follow a path down to Sandá and the farm where the path to Kirkjubøur begins. First, you go uphill. Once you have come up and turn around, you have a good view of Tórshavn and all of Nólsoy.\nThe path now goes gradually down to the village and ends at a cattle grid some 50 metres from the nearest houses. Kirkjubøur is a beautiful and charming village where most of the houses are built in the old style. Kirkjubøur has a wealth of attractions; for example, Kirkjubømúrurin, the ruins of an old cathedral, which is believed to have been built around 1300. There is also Stokkastovurnar, the old farmhouses from about 1350, which are built on the ruins of the old bishop’s seat. The church in Kirkjubøur is the oldest church in the Faroe Islands still in use. It was built in the 1200s.",
+              "activity_website": "https://visitfaroeislands.com/place/torshavn-kirkjuboeur/",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "Duration: 2 hours\nDistance: 7 kilometers\nDifficulty: Easy\nMaximum height: 230 meters\nChildren: Suitable for children\nSurface: Grass and rocky cairn path",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 3,
+              "activity_name": "Suðuroy",
+              "activity_thumbnail": "hiking_suduroy",
+              "activity_teaser_text": "Fall in love with the southernmost island in the Faroe Islands on this challenging, special and beautiful route from north to south",
+              "activity_details": "The route starts at the end of the road by Mýrarnar  in the valley west of the village of Sandvík. There is a sign explaining that this is the old village path to Hvalba. Follow the cairns uphill.\nSandvik is one of the oldest villages in the Faroes. According to legend, the chieftain Sigmundur Brestisson swam from Skúvoy to Sandvík in the early 1000s after the rivalling chieftain Tróndur í Gøtu and his men had attacked him. Sigmundur swam most of the distance with two men on his back. Exhausted, Sigmundur came ashore on the beach in Sandvík, but was murdered by the farmer Tórgrímur Illi and his sons.\nAt the top, the terrain is flat well before it starts to go downhill again towards Hvalba. On the last stretch down to the village, continue in a wedge with a stone wall on the right and a fence on the left. Go through the village, past the sandy beach and then left towards Nes.",
+              "activity_website": "https://visitfaroeislands.com/place/suduroy-from-north-to-south/",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "Duration: 15-16 hours\nDistance: 42 kilometers\nDifficulty: Moderate to difficult. Rather steep in Káragjógv by Hvalba. Relatively tough hill climb from Trongisvágur to Oyrnaskarð. Difficult from Øravík to Mannaskarð and Vágsskarð and rather steep towards Vágur. Rather difficult from Lopra up to Hesturin. Otherwise, there are many stretches of flat terrain\nMaximum height: 430 meters\nChildren: Not suitable for children under 10 to 12 years because of the distance. But if you choose to divide the route into stages, you can bring children. Contact the local tourist office for possible lodgings\nSurface: Mostly grassy cairn path. However, in some places stones and rocks, e.g. at Káragjógv. There is a paved road from Hvalba to Nes and from Vágur to Lopra.",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 4,
+              "activity_name": "Slættaratindur",
+              "activity_thumbnail": "hiking_slaettaratindur",
+              "activity_teaser_text": "Slættaratindur, translated as “flat summit”, is the highest mountain in the Faroe Islands, towering at 880 metres.",
+              "activity_details": "On a clear day, all 18 islands of the Faroe Islands can be viewed from the top (some claim that Iceland’s Vatnajökull mountain can also be seen!). On June 21, the longest day of the year, it is tradition to climb Slættaratindur and watch the sun set and rise again.\nThere are two points from which to start climbing to reach the summit; the first, from Gjógv, takes about four hours of hiking; the second, from Eiðisskarð, takes under an hour.",
+              "activity_website": "https://visitfaroeislands.com/place/slaettaratindur/",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "Duration: 2-2.5 hours\nDistance: 5-6 kilometers\nDifficulty: Moderate. A little difficult from Eiðisskarð and up to the path that leads to the top\nMaximum height: 880 meters\nChildren: The tour is suitable for children. However, keep an eye on children at the top, which is very steep in places\nSurface: Partly visible grass path at the initial part. Then rockier path and rocks",
+              "activity_hours": ""
+            }
+          ]
+        },
+        {
+          "category_id": 2,
+          "category_name": "Landmarks",
+          "category_bg_color": "",
+          "category_thumbnail": "landmarks",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Kópakonan, the Seal Woman",
+              "activity_thumbnail": "landmarks_kopakonan",
+              "activity_teaser_text": "The legend of Kópakonan, literally meaning “the Seal Woman”, is one of the best-known folktales in the Faroe Islands.",
+              "activity_details": "Seals were believed to be former human beings who voluntarily sought death in the ocean. Once a year, on the Thirteenth night, they were allowed to come on land, strip off their skins and amuse themselves as human beings, dancing and enjoying themselves.\nA young farmer from the village of Mikladalur on the northern island of Kalsoy, wondering if this story was true, went and lay in wait on the beach one Thirteenth evening. He watched and saw the seals arriving in large numbers, swimming towards the shore. They clambered on to the beach, shed their skins and laid them carefully on the rocks. Divested of their skins, they looked just like normal people. The young lad stared at a pretty seal girl placing her skin close to the spot where he was hiding, and when the dance began, he sneaked up and stole it. The dancing and games went on all night, but as soon as the sun started to peep above the horizon, all the seals came to reclaim their skins to return to the sea. The seal girl was very upset when she couldn’t find her skin, though its smell still lingered in the air, and then the man from Mikladalur appeared holding it, but he wouldn’t give it back to her, despite her desperate entreaties, so she was obliged to accompany him to his farm.\nHe kept her with him or many years as his wife, and she bore him several children; but he always had to make sure that she didn’t have access to her skin. He kept it locked up in a chest to which he alone had the key, a key which he kept at all times on a chain attached to his belt.",
+              "activity_website": "http://www.visitkalsoy.fo/",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "Mikladalur on the island of Kalsoy",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "Kirkjubøur - Old Church",
+              "activity_thumbnail": "landmarks_kirkjubour",
+              "activity_teaser_text": "In the Middle Ages, Kirkjubøur was the religious center of the islands, and it houses St. Olav's church, the oldest church from the Middle Ages where people still worship weekly. The church was open, still, silent.",
+              "activity_details": "Located only half an hour from the capital is Kirkjubøur, the islands’ most significant historical site. In medieval times, this small village was the cultural and episcopal centre of the Faroe Islands. Today, it effectively consists of three main elements; firstly, the 900 year-old farmhouse/museum Roykstovan, which is thought to be the oldest wooden house still in use today (the Patursson family have lived there for 17 generations); secondly, the present Parish church, Ólavskirkja, built in 1111 and used as the main church in the Faroe Islands for centuries; and thirdly, the medieval Magnus Cathedral, built in the 1300s and the effective seat of power over several centuries.",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "Kirkjubøur Streymoy",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            }
+          ]
+        },
+        {
+          "category_id": 3,
+          "category_name": "Bicycling",
+          "category_bg_color": "",
+          "category_thumbnail": "bicycling",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "rentabike.fo",
+              "activity_thumbnail": "bicycling_rentabike",
+              "activity_teaser_text": "Faroe Islands largest and best offer of rental bicycles.",
+              "activity_details": "All bikes are quality labels, with quality equipment and always in good condition. They counsel and guide you on good bike routes to suit your needs and in relation to today's weather conditions. The best way to experience Tórshavn's attractions and the Faroe Islands's spectacular beauty is from the saddle of a bike. Explore the Faroe Islands from the road, across the mountains with panoramic sights of the islands, through beautiful countryside, historic sites and along fjords with magnificent sea views.",
+              "activity_website": "http://www.rentabike.fo",
+              "activity_phone_number": "+298 270 600",
+              "address_name": "Havnargøta",
+              "address_street": "Havnargøta 11",
+              "city_state_zip": "Hoyvik 188",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "Súkkluverkstaðið hjá Gunnari",
+              "activity_thumbnail": "bicycling_sukkluverkstadid",
+              "activity_teaser_text": "Bicycling in the Faroe Islands",
+              "activity_details": "More and more people are choosing to explore the Faroe Islands from the saddle on their bicycle. It’s no wonder why, considering the spectacular beauty one can see from the roads, mountains and valleys.",
+              "activity_website": "https://www.facebook.com/dahlolsensukklur/",
+              "activity_phone_number": "",
+              "address_name": "Grím Kambansgøta",
+              "address_street": "Grím Kambansgøta 4",
+              "city_state_zip": "Tórshavn 100",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 3,
+              "activity_name": "Bike Trail",
+              "activity_thumbnail": "bicycling_map",
+              "activity_teaser_text": "Bicycling in the Faroe Islands",
+              "activity_details": "More and more people are choosing to explore the Faroe Islands from the saddle on their bicycle. It’s no wonder why, considering the spectacular beauty one can see from the roads, mountains and valleys.",
+              "activity_website": "https://www.facebook.com/dahlolsensukklur/",
+              "activity_phone_number": "",
+              "address_name": "Grím Kambansgøta",
+              "address_street": "Grím Kambansgøta 4",
+              "city_state_zip": "Tórshavn 100",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            }
+          ]
+        },
+        {
+          "category_id": 4,
+          "category_name": "Birdwatching",
+          "category_bg_color": "",
+          "category_thumbnail": "birdwatching",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Birdwatching 8 day tour",
+              "activity_thumbnail": "birdwatching_tour",
+              "activity_teaser_text": "Enjoy a boat trip to the renowned Vestmanna bird cliffs. Cruise alongside the towering cliff faces and hunt for the breeding areas of guillemots and razorbills.",
+              "activity_details": "Offering a perfect breeding and nesting environment for migrating birds, the Faroe Islands become home during the summer months to puffins, plovers, sparrows, wild gees, storm petrels, ravens, crows, gannets, guillemots and the national bird of the Faroes – the oyster catcher.\nEmbark upon a unique fly-drive adventure to this undiscovered destination, locked away in the heart of the North Atlantic Ocean. Witness thousands of Atlantic puffins on Mykines gathering to nest and rear their young, go in search of the only Faroese gannet colony, and take part in a fascinating excursion after dark on the island of Nolsoy to discover the largest colony of storm petrels in the world.",
+              "activity_website": "https://www.regent-holidays.co.uk/tour/birdwatching-in-the-faroe-islands/",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "Vestmanna",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "rate: from £1885 per person",
+              "activity_hours": ""
+            }
+          ]
+        },
+        {
+          "category_id": 5,
+          "category_name": "Fishing",
+          "category_bg_color": "",
+          "category_thumbnail": "fishing",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Fishing & Angling",
+              "activity_thumbnail": "fishing_tour",
+              "activity_teaser_text": "Whether by boat or from shore, there are plenty of opportunities to fish in the Faroe Islands. With the ocean never further than 5 km away – no matter where you’re located – it is effortless to grab a rod and go fishing whenever you want.",
+              "activity_details": "The Faroe Islands have good fishing areas and sheltered fishing grounds away from strong winds, making it possible to fish most days regardless of wind direction. The two main types of fishing in the Faroe Islands are deep-sea fishing and fly fishing.\nFishing and angling in the Faroe Islands is unlike anything you have experienced before; the beautiful scenery and splendid tranquillity makes fishing a truly extraordinary experience.\nFISHING & ANGLING – PRACTICAL INFORMATION\nAnglers travelling to the Faroe Islands do not need a veterinary certificate on the cleaning and disinfection of their fishing equipment. But prior to arrival in the Faroe Islands, all equipment, including rods, reels, rubber waders, or lures, must be disinfec­ted in order to kill any fish-pathogens.\nFishing permits are required and can be purchased at most Regional Tourist Centres. Regulations for fishing in the lochs are printed on the permit. Coastal fishing is gene­rally permitted, but please en­quire about local excep­tions.\nTYPES OF FISH TO CATCH\nCod, Haddock, Flounder, Shark, Ling, Colefish, Halibut, Plaice, Catfish, Maceral, Monkfish, Whiting, Squid, Redfish, Herring, Pollock, among many others.",
+              "activity_website": "http://www.fishingwithblastein.com/",
+              "activity_phone_number": "(+298) 581582",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            }
+          ]
+        },
+        {
+          "category_id": 6,
+          "category_name": "Sailing",
+          "category_bg_color": "",
+          "category_thumbnail": "sailing",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Sailing around the islands",
+              "activity_thumbnail": "sailing_ms",
+              "activity_teaser_text": "You can discover these views of the Faroe Islands by sea while sailing with ships, boats or even an old schooner.",
+              "activity_details": "The 18 islands of the Faroe Islands are surrounding by the North Atlantic ocean. No point in the Faroe Islands is further than five kilometres from the ocean. Sailing is a fantastic way to experience the beautiful landscapes of the islands, offering completely different views compared to the ones from land.\nYou can discover these views of the Faroe Islands by sea while sailing with ships, boats or even an old schooner. Some of these ships or schooners are old and have a great history, making the journey even more interesting.",
+              "activity_website": "https://visitfaroeislands.com/see-do/sailing/",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            }
+          ]
+        },
+        {
+          "category_id": 7,
+          "category_name": "Horseback riding",
+          "category_bg_color": "",
+          "category_thumbnail": "horseriding",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Davidsen Hestar horseback riding",
+              "activity_thumbnail": "horseriding_davidsen",
+              "activity_teaser_text": "The Faroese horse, called føroyska rossið in Faroese, has wandered in the rugged landscape of the windswept islands for over a thousand years. DNA analysis has shown that the Faroese breed is unique, not found anywhere else in the world.",
+              "activity_details": "Davidsen Hestar offer horseback riding of all sorts. The standard trip is from Miðvágur on the island of Vágar out to the end of Sørvágsvatn, the lake overlooking the ocean.",
+              "activity_website": "",
+              "activity_phone_number": "+298 210737",
+              "address_name": "Miðvágur Vágar",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "This trip takes 2 hours and costs DKK 400 per person.",
+              "activity_hours": ""
+            }
+          ]
+        },
+        {
+          "category_id": 8,
+          "category_name": "Shopping",
+          "category_bg_color": "",
+          "category_thumbnail": "shopping",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Guðrun & Guðru",
+              "activity_thumbnail": "shopping_gudrungudrun",
+              "activity_teaser_text": "Guðrun & Guðrun is owned by two Faroese women and the creative process of design is very closely linked to the isolation of the Faroe Islands.",
+              "activity_details": "This internationally known knitwear company specialises in hand-knit clothing for women, men and children.\nThe hand-knitted collections are made in the homes of women’s knitters on the Faroe Islands and in Jordan and Peru as part of their women’s empowerment projects.\nGuðrun & Guðrun is owned by two Faroese women and the creative process of design is very closely linked to the isolation of the Faroe Islands.\nTheir shop is located on the main street in downtown Tórshavn. Their products can also be bought online.",
+              "activity_website": "",
+              "activity_phone_number": "(+298) 315166",
+              "address_name": "Niels Finsensgøta",
+              "address_street": "Niels Finsensgøta 13, 100 Tórshavn Streymoy",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Mon – Thurs\n10:00 - 17:30\nFriday\n10:00 - 18:00\nSaturday\n10:00 - 16:00\nSunday\nClosed"
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "SMS",
+              "activity_thumbnail": "shopping_sms",
+              "activity_teaser_text": "Tórshavn is home to the country’s largest shopping mall, called SMS. It includes clothing stores, a bookstore, a toy store, a jewellery store, a pharmacy, a large grocery store, an electronics store and many more.",
+              "activity_details": "SMS is home to the country’s largest shopping mall, called SMS. It includes clothing stores, a bookstore, a toy store, a jewellery store, a pharmacy, a large grocery store, an electronics store and many more. It also has a food court with three restaurants. It even has a Burger King, one of only two international fast-food chains anywhere on the islands! SMS also organizes various events which are held in the hall located in the centre of the shopping centre.",
+              "activity_website": "",
+              "activity_phone_number": "+298 341900",
+              "address_name": "",
+              "address_street": "A Trapputrodni, Tórshavn 100, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Mon – Thurs: 10.00 – 18.00\nFri: 10.00 – 19.00\nSat: 10.00 – 18.00\nSun: Closed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Food": [
+        {
+          "category_id": 1,
+          "category_name": "Restaurants",
+          "category_bg_color": "",
+          "category_thumbnail": "restaurants",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Koks Restaurant",
+              "activity_thumbnail": "food_koks",
+              "activity_teaser_text": "This Michelin star restaurant offers an evening long tasting menu, super imaginative with emphasis on local ingredients - lots of super fresh seafood, mutton and a lot of local berries.",
+              "activity_details": "This Michelin star restaurant offers an evening long tasting menu, super imaginative with emphasis on local ingredients - lots of super fresh seafood, mutton and a lot of local berries . Other than the food which was very good (some dishes better than others but there were 18 so who can remember all), the venue is  very special - a wooden hut you get to on a ride by their own land-rover after a lakeside welcome tasting in a wind drying shed for mutton. The waiters and sommelier  are all charming and very knowledgeable,  the service is impeccable and the whole experience is well worth the substantial bill at the end. If you are a Foodie this is a place not to miss while visiting the Faroe islands.",
+              "activity_website": "http://koks.fo",
+              "activity_phone_number": "+298 333999",
+              "address_name": "",
+              "address_street": "Frammi við Gjónna, Leynavatn, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "John A. Roebling Suspension Bridge, Covington, KY 41011",
+              "activity_specifics": "Average cost of meal 1400 DKK",
+              "activity_hours": "Sunday	6–10PM\nMonday	6–10PM\nTuesday	6–10PM\nWednesday	6–10PM\nThursday	6–10PM\nFriday	6–10PM\nSaturday	6–10PM"
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "Áarstova",
+              "activity_thumbnail": "food_aarstova",
+              "activity_teaser_text": "Lamb & Seafood from the Faroe Islands. An authentic location in the old part of Tórshavn. The restaurant is situated in a historic building with a charming soul.",
+              "activity_details": "Áarstova used to be a family home on the outskirts of the Tórshavn. Today, it provides the setting for a cozy wooden restaurant located in the heart of the city – undoubtedly one of the best restaurants in the Faroe Islands. The impeccable service at Áarstova is only matched by the food and wine menu, which includes fabulous Faroese lamb and carefully chosen wine and Scottish ales.",
+              "activity_website": "http://aarstova.fo/aarstova/",
+              "activity_phone_number": "+298 333000",
+              "address_name": "Gongin 1",
+              "address_street": "Gongin 1, Tórshavn 100, Faroe Islands",
+              "city_state_zip": "Tórshavn 100",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Open every day – 6.00 pm to 12 am.\nKitchen closes at 10 pm"
+            },
+            {
+              "activity_id": 3,
+              "activity_name": "Frumbiti",
+              "activity_thumbnail": "food_frumbiti",
+              "activity_teaser_text": "Experience the Bounty of the Faroe Islands at Frumbiti Restaurant! Frumbiti is located in the heart of Tórshavn at the ground floor of local Hotel Havn. Come in and enjoy Good Food, Good Wine and Good Company in a relaxed and unpretentious environment.",
+              "activity_details": "Experience the Bounty of the Faroe Islands at Frumbiti Restaurant! Frumbiti is located in the heart of Tórshavn at the ground floor of local Hotel Havn. Come in and enjoy Good Food, Good Wine and Good Company in a relaxed and unpretentious environment.",
+              "activity_website": "https://www.frumbiti.fo/booking/",
+              "activity_phone_number": "+298 333000",
+              "address_name": "",
+              "address_street": "Doktara Jakobsens gøta 16, Tórshavn 100, Tórshavn 100, Faroe Islands",
+              "city_state_zip": "Tórshavn 100",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Sunday	Closed\nMonday	6PM–12AM\nTuesday	6PM–12AM\nWednesday	6PM–12AM\nThursday	6PM–12AM\nFriday	4PM–12AM\nSaturday	6PM–12A"
+            }
+          ]
+        },
+        {
+          "category_id": 2,
+          "category_name": "Brewery",
+          "category_bg_color": "",
+          "category_thumbnail": "brewery",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Føroya Bjór",
+              "activity_thumbnail": "food_foroya",
+              "activity_teaser_text": "Föroya Bjór is a Faroese brewing company based in Klaksvík. Apart from beers the company also produces soft drinks. It was established in 1888 in Klaksvík.",
+              "activity_details": "In 1883 Símun F. Hansen went to Denmark to learn the art of brewing and baking.[1] Upon his return in the Faroe Islands in 1888, he established his own brewery in Klaksvík, the second to be established in the country.[1] The first brewery was Restorffs Bryggjarí. In 2009 Föroya Bjór opened an office in Reykjanesbær and started exporting its products in Iceland.",
+              "activity_website": "http://bjor.fo/",
+              "activity_phone_number": "+298 475454",
+              "address_name": "",
+              "address_street": "24 Klaksvíksvegur, Klaksvík 700, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Sunday	Closed\nMonday	10AM–5PM\nTuesday	10AM–5PM\nWednesday	10AM–5PM\nThursday	10AM–5PM\nFriday	10AM–5:30PM\nSaturday	10AM–1PM"
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "Okkara",
+              "activity_thumbnail": "food_okkara",
+              "activity_teaser_text": "One of only two breweries in the country (the other being Foroyar, which is of the industrial persuasion), Okkara offers a range of ales and lagers, of all weights, though none are exported further than Denmark.",
+              "activity_details": "Okkara arranges tours of the brewery with advance notice, typically on Thursdays. Though most of their beer styles are available at the state monopoly stores and at pubs and hotel bars in Torshavn, they cannot legally sell beer from the brewery to the public because of the structure of Faroese liquor licensing. The liquor laws across Scandivanian countries are curiously stricter than you would guess, what with them exemplifying how to make progressive social democracy work in the first world. But no, you can’t sell beer from your own brewery, you have to let the government sell it for you, many times warm, many times with restricted hours. The blue laws of Iceland and Faroe Islands (and you could argue Sweden and Norway) are not much different than the restrictive laws that are in place in many southern US states.",
+              "activity_website": "https://www.facebook.com/pages/OKKARA/175637615833999",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "Uppi á Heiðum 1, 176 Velbastaður, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            }
+          ]
+        },
+        {
+          "category_id": 3,
+          "category_name": "Grocery",
+          "category_bg_color": "",
+          "category_thumbnail": "grocery",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Miklagarður",
+              "activity_thumbnail": "food_miklagardur",
+              "activity_teaser_text": "The largest supermarket you will find on the islands. The selection is great and full of food items, plants, home goods and there's even a butcher.",
+              "activity_details": "One of the larger grocery stores in the Faroe Islands.  Easy parking in the SMS Center lot.  Better selection than some of the smaller stores.  Sale items clearly marked.  Has large selection of produce, cheeses, meats, and bakery items.",
+              "activity_website": "https://miklagardur.fo/",
+              "activity_phone_number": "+298 341950",
+              "address_name": "",
+              "address_street": "SMS Center, Tórshavn 100, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Sunday	Closed\nMonday	9AM–6PM\nTuesday	9AM–6PM\nWednesday	9AM–6PM\nThursday	9AM–6PM\nFriday	10AM–7PM\nSaturday	9AM–6PM"
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "Bónus Norðskála",
+              "activity_thumbnail": "food_bonus",
+              "activity_teaser_text": "Great place for food shopping. They are well stocked.",
+              "activity_details": "Great place for food shopping. They are well stocked. You can find many Bónus supermarket around the Faroe Islands.",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "8 460, Við Svartheygg, Norðskáli, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Sunday	Closed\nMonday - Saturday	9AM–10PM"
+            }
+          ]
+        },
+        {
+          "category_id": 4,
+          "category_name": "Bakeries",
+          "category_bg_color": "",
+          "category_thumbnail": "bakery",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Bakaríið",
+              "activity_thumbnail": "food_bakariid",
+              "activity_teaser_text": "Delicious bread and pastry from the Faroe Islands",
+              "activity_details": "You can find delicious bread and desserts made fresh everyday.",
+              "activity_website": "",
+              "activity_phone_number": "+298 4473660",
+              "address_name": "",
+              "address_street": "59 Heiðavegur, Saltangará 600, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Sunday	7:30-10:30AM\nMonday - Saturday	7AM–8PM"
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "Mylnan",
+              "activity_thumbnail": "food_mylnan",
+              "activity_teaser_text": "They have most foods, ingredients and common household items one might need for every every day use. The bread is always freshly made on the same day.",
+              "activity_details": "They have most foods, ingredients and common household items one might need for every every day use. The bread is always freshly made on the same day.",
+              "activity_website": "",
+              "activity_phone_number": "+298 341991",
+              "address_name": "",
+              "address_street": "1 Berjabrekka, Tórshavn 100, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Everyday 7AM–11PM"
+            }
+          ]
+        },
+        {
+          "category_id": 5,
+          "category_name": "Cafes",
+          "category_bg_color": "",
+          "category_thumbnail": "cafes",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Frida Kaffihus",
+              "activity_thumbnail": "food_frida",
+              "activity_teaser_text": "A delightful harbor side cafe in a small town with sophisticated coffee and food. Many veggie and a few vegan options.",
+              "activity_details": "This is one of the few places in the Faroe Islands that serve some vegetarian food items. Their salad is great along with their coffee.I loved the cold coffee!! It felt like home-made. You can also call it a bakery or a cafe. The view from certain sitting areas is breathtaking!! You should try their pasteries.",
+              "activity_website": "https://frida.fo/?utm_source=tripadvisor&utm_medium=referral",
+              "activity_phone_number": "+298 333344",
+              "address_name": "",
+              "address_street": "Nolsoyar Pals Gota 7, Klaksvik, Bordhoy 700, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Mon - Thu 9:00 AM - 7:00 PM\nFri 9:00 AM - 8:00 PM\nSat 10:00 AM - 3:00 PM"
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "Paname Cafe",
+              "activity_thumbnail": "food_paname",
+              "activity_teaser_text": "Café in the center of Tóshavn serving homemade cakes, sandwiches, salads, and coffees.",
+              "activity_details": "A nice place to drink coffee at in the heart of Torshavn. The café offers coffee, tea, cakes, and sandwiches. It's next to a bookshop so you can read magazines and newspapers (local ones, the guardian, le monde...) during your stay. Good service and atmosphere.",
+              "activity_website": "https://www.facebook.com/paname.fo",
+              "activity_phone_number": "+298 788288",
+              "address_name": "",
+              "address_street": "Vaglid 4, Torshavn, Streymoy 100, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Mon - Thu 9:00 AM - 7:00 PM\nFri 9:00 AM - 8:00 PM\nSat 10:00 AM - 3:00 PM"
+            },
+            {
+              "activity_id": 3,
+              "activity_name": "Cafe Fjorooy",
+              "activity_thumbnail": "food_fjorooy",
+              "activity_teaser_text": "Enjoyed a delicious meal here at this restaurant right after the ferry ride back from Mykines. The food is made homely.",
+              "activity_details": "Great spot for lunch after seeing the waterfall. After a long hike from Bour to the Múlafossur waterfall. Since it is only 5 minutes from the airport, a great spot before or after flight.",
+              "activity_website": "",
+              "activity_phone_number": "+298 232100",
+              "address_name": "",
+              "address_street": "Bakkavegur 2, Sorvagur, Vagar Island 380, Faroe Islands",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": "Mon - Thu 9:00 AM - 7:00 PM\nFri 9:00 AM - 8:00 PM\nSat 10:00 AM - 3:00 PM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Culture": [
+        {
+        "category_id": 1,
+        "category_name": "Holiday",
+        "category_bg_color": "",
+        "category_thumbnail": "holiday",
+        "category_activities": [
+          {
+            "activity_id": 1,
+            "activity_name": "Ólavsøka National Day",
+            "activity_thumbnail": "holiday_olavsoka",
+            "activity_teaser_text": "Many places have their own special day – a national day, flag day or independence day. In the Faroe Islands, that day is the 29th of July.",
+            "activity_details": "So what is Ólavsøka? Translated as Saint Olaf’s Day, the festival is a national holiday in the Faroe Islands. There are plenty of activities such as concerts, parades, football matches, boat race, chain dancing, and chorus singing (especially the Midnight Song). Historically, the festival memorialises the death of King Olafduring a battle in Norway in 1030. It’s also a celebration of the arrival of Christianity to Norway and the Faroe Islands. As with many national days, the locals don traditional costumes. You will see them everywhere, as all of the members of Faroese families have the proper dress or suit for the Ólavsøka.",
+            "activity_website": "",
+            "activity_phone_number": "",
+            "address_street": "",
+            "city_state_zip": "",
+            "address_directions_link": "",
+            "activity_specifics": "",
+            "activity_hours": ""
+          },
+          {
+            "activity_id": 2,
+            "activity_name": "Christmas",
+            "activity_thumbnail": "holiday_christmas",
+            "activity_teaser_text": "Tórshavn, one of the world’s smallest capitals, is the ideal location for Christmas shopping and extraordinary festive magic. In December, pop-up stores fill the streets of the small city. You can find everything from designer clothing to handmade Christmas decorations to Faroese art, jewellery and knitting.",
+            "activity_details": "Tórshavn, one of the world’s smallest capitals, is the ideal location for Christmas shopping and extraordinary festive magic. In December, pop-up stores fill the streets of the small city. You can find everything from designer clothing to handmade Christmas decorations to Faroese art, jewellery and knitting. Take in the festive atmosphere at the ice skating rink in downtown Tórshavn. Open throughout December, the ice skating rink is a great spot to get join others in a fun, family-friendly activity.",
+            "activity_website": "",
+            "activity_phone_number": "",
+            "address_street": "",
+            "city_state_zip": "",
+            "address_directions_link": "",
+            "activity_specifics": "",
+            "activity_hours": ""
+          },
+          {
+            "activity_id": 2,
+            "activity_name": "New Years",
+            "activity_thumbnail": "holiday_newyear",
+            "activity_teaser_text": "The New Year celebration in Vágur, a town on the island of Suðuroy, is one of the most stunning celebrations in the world. It involves throwing torches on the wooden boats, carrying flags, putting up the gates and singing.",
+            "activity_details": "The town of Vágur has a long time tradition of celebrating New Year. The whole preparation starts during the daytime when the petrol cans are gathered on the highway Eggjarvegur opposite to the Triangle Square, which is the main location for the party to come. Then two gates are put up, one with the present year on and some wishes for the ​New Year, and the other one - with the year to come. Later, around midnight, the procession with torches and flags will pass through the gates and line up on the Triangle Square around the old wrecked wooden boat and sing: Tíðin rennur sum streymur í á English: Time flows away like the water in a river. After the singing, ​they put the boat on fire and the fireworks start immediately. A truly unforgettable experience that is unique on Faroes.",
+            "activity_website": "",
+            "activity_phone_number": "",
+            "address_street": "",
+            "city_state_zip": "",
+            "address_directions_link": "",
+            "activity_specifics": "",
+            "activity_hours": ""
+          }
+        ]
+      },
+        {
+          "category_id": 2,
+          "category_name": "Music",
+          "category_bg_color": "",
+          "category_thumbnail": "music",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "G! Festival",
+              "activity_thumbnail": "music_g",
+              "activity_teaser_text": "Summer Festival. With several thousand guests expected over a single weekend in August, the Summer Festival has grown to be the island's largest music and family festival.",
+              "activity_details": "Mid July, the international orientated and progressive G! Festival takes over the small village of Syðrugøta and transforms it to one enormous experience. The setting is a wonderful combination of magnificent nature and Faroese hospitality, with five concert stages dotted in between the colourful houses. The main stage is situated down on the beach next to the Finnish sauna and the hot pools, where you can admire the view of the tall green mountains as you warm through after a dip in the cold open sea.",
+              "activity_website": "https://visitfaroeislands.com/event/g-festival/",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "Ticket 295-995 DKK",
+              "activity_hours": ""
+            }
+          ]
+        },
+        {
+          "category_id": 3,
+          "category_name": "Language",
+          "category_bg_color": "",
+          "category_thumbnail": "language",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "History of Faroese",
+              "activity_thumbnail": "language_history",
+              "activity_teaser_text": "The Faroes today is multilingual, schoolwise. Besides Faroese, Danish must be learned, and English lessons start in the 5th grade.",
+              "activity_details": "As all Faroese know Danish, they also understand Norwegian and Swedish. However, it is more difficult for the Faroese to understand Icelandic! Many Faroese also know other languages, like French, German and Spanish. Lately many foreigners have come to the islands, and some have taken up an interest in their language, for example, Romanian and Polish. Today, Faroese is spoken by approx. 60-70,000 people. 47,000 of these live in the Faroes, a big part of the rest in Denmark . But strangely you can find a Faroese in almost any country in the world. Currently, there are Faroese people in Mali , Ukraine and Australia. Faroese has been spoken in the Faroes for about 600 years, when it separated itself from Old Norse. The first writing that show signs of a new language, however, was written in 1298. The closest relative to Faroese is the now extinct Norn, spoken in the Orkneys until the 17th or 18th century and the Shetlands where it became extinct in the 2nd half of the 19th century. The last remains of Norn was actually written down by a Faroese man, Dr. Jakob Jakobsen in the 1880's. Shetland's Norn was actually so close to Faroese that the two languages were mutually intelligible.",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "Learn Faroese",
+              "activity_thumbnail": "language_learn",
+              "activity_teaser_text": "A collection of useful phrases in (føroyskt), a Northern Germanic language spoken in the Faroe Islands and Denmark.",
+              "activity_details": "Góðan morgun - gouwan morgun - Good morning\nGóðan dag - gouwan dae - Hi/Good day\nGott kvøld - gott kvuld - Good evening\nGóða nátt - gouwa not - Good night\nFarvæl - farrvael - Goodbye\nGóði/góða - gouwe/gouwa - Please (difference is gender)\nTakk - takk - Thank you\nGer so væl - jer so vael - There you go\nJa/Nei - yah/nai or noy - Yes/No\nHarra/Frúa/Frøkun - harra/fruwa/froekun - Mister/Misses/Miss\nHvussu gongur? - Kvussu gongur (pronounce both g's) - How are you? (Both in- and formal)\nEg eri troyttur - eh ehre troyttur - I'm tired\nEg eri sjúkur - eh ehre shuwkur - I'm sick\nEg eri svangur - eh ehre svengur/svangur - I'm hungry (dialectal differences)\nEg eri tystur - eh ehre tistur - I'm thirsty\nGott/Væl/OK - gott/vael/OK - Good/Well/OK\nRingt/Illa - ringt/idla - Not Good/Well (Ringt also means bad and hard)\nHvussu eita tygum - Kvussu aitah/oytah teeyum - What is your name? (Formal)\nHvussu eitur tú? - Kvussu aitur/oytur tuw? - What is your name? (Informal) (Dialectical differences)\nEg eiti... - eh aite/oyte... - My name is...\nHvaðan eru tygum? - Kva-an ehru teeyum? - Where are you from (Formal)\nHvaðan ert tú? - Kva-an ehrt tuw? - Where are you from? (Informal)\nHvar búgva tygum? - Kvaer bigvah teeyum? - Where do you live? (Formal)\nHvar býrt tú? - Kvaer bírt tú? - Where do you live? (Informal) (I don't know of an English letter that has the same pronounciation as the Faroese í/ý.)\nEg eri úr USA . - Eh ehri uwr Uuh-ess-ah. - I'm from the USA.",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            }
+          ]
+        },
+        {
+          "category_id": 4,
+          "category_name": "Sports",
+          "category_bg_color": "",
+          "category_thumbnail": "sports",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "rowing",
+              "activity_thumbnail": "sports_rowing",
+              "activity_teaser_text": "Despite the massive popularity of football on the remote North Atlantic islands, rowing is actually the national sport of the Faroe Islands.",
+              "activity_details": "Rowers use traditional open Faroese boats, ranging from six to ten oars, with races ranging in distance from 1000 to 2000 metres. The rowing season is short, from around early June to late July, but rowers train for many months leading up to the first competition. There are seven rowing races, held individually at regional village festivals. The final race is held during Ólavsøka in late July. The races take place in the ocean, which means the wind, waves and currents are all important elements for the rowers to consider. In some cases, these elements almost single-handedly decide who wins. Although Faroese rowing boat do not compete at international level, just the fact that small rowing boats can compete out in the North Atlantic Ocean is against all odds.",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "football soccer",
+              "activity_thumbnail": "sports_football",
+              "activity_teaser_text": "The Faroe Islands national football team beating footballing giants Austria in their first ever competitive match must be considered one of the greatest David versus Goliath stories in sporting history.",
+              "activity_details": "Although the footballing results that immediately followed didn’t quite live up to that first phenomenal result, Faroese football has progressed immensely in the past 25 years. Improved facilities, an influx of foreign players, qualified coaches, and financial backing from UEFA, among other things, have had a great impact on the domestic Faroese football league. Club teams regularly get good results in European competitions, and there are currently about 10 Faroese players playing professionally in various leagues in Europe. The latest evidence of the progress of Faroese football are two recent victories (home and away) against Greece in the 2016 European Championships Qualifiers. Against all odds.",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_name": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "Maps": [
+        {
+          "category_id": 1,
+          "category_name": "Maps",
+          "category_bg_color": "",
+          "category_thumbnail": "maps",
+          "category_activities": [
+            {
+              "activity_id": 1,
+              "activity_name": "Faroe Islands Map",
+              "activity_thumbnail": "maps_whole",
+              "activity_teaser_text": "The 18 mountainous islands have a coastline of 1.289 kilometers and nowhere on the islands is the distance to the sea more than five kilometers.",
+              "activity_details": "",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 2,
+              "activity_name": "Tórshavn Map",
+              "activity_thumbnail": "maps_torshavn",
+              "activity_teaser_text": "Tórshavn, is the capitol of Faroe Islands. Over 23,000 people live here.",
+              "activity_details": "",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 3,
+              "activity_name": "Klaksvík",
+              "activity_thumbnail": "maps_klaksvik",
+              "activity_teaser_text": "Klaksvík is the second largest city in Faroe Islands.",
+              "activity_details": "",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 4,
+              "activity_name": "Tunnels Map",
+              "activity_thumbnail": "maps_tunnel",
+              "activity_teaser_text": "At present there are 20 road tunnels totalling 44 km in operation on the islands, including two subsea toll tunnels",
+              "activity_details": "",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            },
+            {
+              "activity_id": 5,
+              "activity_name": "Emergency numbers",
+              "activity_thumbnail": "emergency",
+              "activity_teaser_text": "Emergency or fire: Dial 112. Doctors around the islands provide emergency assistance; contact police or pharmacies for information. The Coast Guard and Atlantic Airways have helicopters that may be used in emergencies.",
+              "activity_details": "Emergency or fire: Dial 112.\nFirst Aid: There are emergency wards at the hospital in\n-Tórshavn on Streymoy, tel +298 304500\nKlaksvik on Borðoy, tel +298 454545\nTvoroyri on Suðuroy, tel +298343300\nPolice stations: are found in most parts of the country\nTórshavn (open 24 hours) tel +298 351448\nPharmacies:\nTórshavn, by SMS Shopping Centre, tel +298 341100\nKlaksvik on Borðoy, tel +298 472500\nTvoroyri on Suðuroy, tel +298360300\nRunavik on Eysturoy, tel +298473400\nCar problems: For car breakdown, please contact the First Station in Tórshavn, tel +298 302100.",
+              "activity_website": "",
+              "activity_phone_number": "",
+              "address_street": "",
+              "city_state_zip": "",
+              "address_directions_link": "",
+              "activity_specifics": "",
+              "activity_hours": ""
+            }
+          ]
+        }
+      ]}
+
+] //End of categories array
+}
+
+

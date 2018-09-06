@@ -1,0 +1,117 @@
+Index: app/src/main/java/tourguide/android/example/com/tourguide/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package tourguide.android.example.com.tourguide;\n\nimport android.content.Intent;\nimport android.os.Bundle;\nimport android.support.design.widget.TabLayout;\nimport android.support.v4.app.Fragment;\nimport android.support.v4.app.FragmentManager;\nimport android.support.v4.app.FragmentPagerAdapter;\nimport android.support.v4.view.ViewPager;\nimport android.support.v7.app.AppCompatActivity;\nimport android.support.v7.widget.Toolbar;\n\nimport org.json.JSONArray;\nimport org.json.JSONException;\nimport org.json.JSONObject;\n\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.util.ArrayList;\nimport java.util.Iterator;\nimport java.util.List;\n\n/*\n * Landing page of the tour guide app is powered by this Activity class\n * Loads the ViewPager to offer sliding transition between the Category tabs\n * Loads the GridViewFragment to show the SubCategory items as grid items with the use of GridViewAapter\n */\npublic class MainActivity extends AppCompatActivity {\n\n    private Toolbar toolbar;\n    private TabLayout tabLayout;\n    private ViewPager viewPager;\n\n    //Name of the data JSON file from which all tour guide data is loaded\n    private static String JSON_FILE_NAME = \"faroeislandplaces.json\";\n    //JSON string constants to identify fields\n    //Field name of the top most field in the JSON file which will hold an array of objects\n    private static String FIELD_CATEGORIES = \"Categories\";\n\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.activity_main);\n        toolbar = (Toolbar) findViewById(R.id.toolbar);\n        setSupportActionBar(toolbar);\n        getSupportActionBar().setDisplayHomeAsUpEnabled(true);\n\n        //ViewPager control with tab layout\n        viewPager = (ViewPager) findViewById(R.id.viewpager);\n        setupViewPager(viewPager);\n        tabLayout = (TabLayout) findViewById(R.id.tabs);\n        tabLayout.setupWithViewPager(viewPager);\n    }\n\n    /*\n     * Accepts viewPager control and adds as many pages to it as the number of categories\n     * present in the input json file\n     */\n    private void setupViewPager(ViewPager viewPager) {\n        List<Category> categories = getCategoires();\n        assert (categories != null);\n        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());\n        Intent listPageIntent = new Intent(MainActivity.this, ItemListActivity.class);\n        //For each category a) generate a gridview\n        for (Category category : categories) {\n            GridViewFragment subCategoryGrid = new GridViewFragment();\n            subCategoryGrid.setCategory(category);\n            subCategoryGrid.setListPageIntent(listPageIntent);\n            adapter.addFrag(subCategoryGrid, category.getTitle());\n        }\n        viewPager.setAdapter(adapter);\n    }\n\n    private List<Category> getCategoires() {\n        JSONArray categoriesArray = parseJSON(); //populates categoriesArray\n        assert (categoriesArray != null);\n\n        //Parse categoriesArray JSONArray and read subcategories\n        List<Category> categories = new ArrayList<>();\n        try {\n            for (int j = 0; j < categoriesArray.length(); j++) {\n                JSONObject categoryObj = categoriesArray.getJSONObject(j);\n                String categoryName = null;\n\n                //The first field name in the category JSONObject is the name of the category\n                for (final Iterator<String> iter = categoryObj.keys(); iter.hasNext(); ) {\n                    categoryName = iter.next(); //interested only in the first key $TODO$ make this page title\n                    break;\n                }\n\n                Category category = new Category(j, categoryName);\n                JSONArray subCategoriesArray = null;\n                assert (categoryName != null);\n                subCategoriesArray = categoryObj.getJSONArray(categoryName);\n                List<SubCategory> subCategories = new ArrayList<>();\n                for (int k = 0; k < subCategoriesArray.length(); k++) {\n                    JSONObject subCategoryDetails = subCategoriesArray.getJSONObject(k);\n                    Integer category_id = (Integer) subCategoryDetails.get(\"category_id\");\n                    String category_thumbnail = (String) subCategoryDetails.get(\"category_thumbnail\");\n                    String category_name = (String) subCategoryDetails.get(\"category_name\");\n                    Integer imageId = MainActivity.this.getResources().getIdentifier(category_thumbnail, \"drawable\", MainActivity.this.getPackageName());\n                    SubCategory subCategory = new SubCategory(category_id, category_name, MainActivity.this.getResources().getDrawable(imageId));\n                    JSONArray subCategoryActivities = subCategoryDetails.getJSONArray(\"category_activities\");\n\n                    List<Item> subCategoryItems = new ArrayList<>();\n                    // Parse subCategoryActivities array to read attractions/popular destination details for the given subcategory\n                    for (int i = 0; i < subCategoryActivities.length(); i++) {\n                        JSONObject listViewItem = subCategoryActivities.getJSONObject(i);\n                        String activity_thumbnail = (String) listViewItem.get(\"activity_thumbnail\");\n                        int activityImageId = MainActivity.this.getResources().getIdentifier(activity_thumbnail, \"drawable\", MainActivity.this.getPackageName());\n                        if(activityImageId == 0) {\n                            System.out.println(\"Something wrong activity_thumbnail: [\"+activity_thumbnail+\"] image exist?\");\n                            continue;\n                        }\n                        Integer activity_id = listViewItem.getInt(\"activity_id\");\n                        String activity_name = listViewItem.getString(\"activity_name\");\n                        Item item = new Item(activity_id, activity_name, activityImageId);\n                        item.setActivity_teaser_text(listViewItem.getString(\"activity_teaser_text\"));\n                        item.setActivity_details(listViewItem.getString(\"activity_details\"));\n                        item.setActivity_website(listViewItem.getString(\"activity_website\"));\n                        item.setActivity_phone_number(listViewItem.getString(\"activity_phone_number\"));\n//                        item.setAddress_name(listViewItem.getString(\"address_name\"));\n                        item.setAddress_street(listViewItem.getString(\"address_street\"));\n                        item.setCity_state_zip(listViewItem.getString(\"city_state_zip\"));\n                        item.setAddress_directions_link(\"address_directions_link\");\n                        item.setActivity_specifics(\"activity_specifics\");\n                        item.setActivity_hours(\"activity_hours\");\n                        subCategoryItems.add(item);\n                    }\n                    subCategory.setItemsInSubCategory(subCategoryItems);\n                    subCategories.add(subCategory);\n                }\n                category.setSubCategories(subCategories);\n                categories.add(category);\n            }\n            return categories;\n        } catch (JSONException e) {\n            e.printStackTrace();\n        }\n        return null;\n    }\n\n    /*\n     * Reads the data from JSON file and returns the \"Categories\" JSONArray\n     */\n    private JSONArray parseJSON() {\n        JSONArray categoriesObject;\n        try {\n            InputStream inputStream = this.getAssets().open(JSON_FILE_NAME);\n            byte[] inputBuffer = new byte[inputStream.available()];\n            inputStream.read(inputBuffer);\n            inputStream.close();\n            String jsonString = new String(inputBuffer, \"UTF-8\");//Find the constant for encoding\n            JSONObject faroeIslandInfo = new JSONObject(jsonString);\n            categoriesObject = faroeIslandInfo.getJSONArray(FIELD_CATEGORIES);\n            return categoriesObject;\n        } catch (IOException e) {\n            e.printStackTrace();\n        } catch (JSONException e) {\n            //Parsing json string failed\n            e.printStackTrace();\n        }\n        return null;\n    }\n\n\n    /*\n     * Adapter object for the viewPager control\n     */\n    class ViewPagerAdapter extends FragmentPagerAdapter {\n        private final List<Fragment> mFragmentList = new ArrayList<>();\n        private final List<String> mFragmentTitleList = new ArrayList<>();\n\n        public ViewPagerAdapter(FragmentManager manager) {\n            super(manager);\n        }\n\n        @Override\n        public Fragment getItem(int position) {\n            return mFragmentList.get(position);\n        }\n\n        @Override\n        public int getCount() {\n            return mFragmentList.size();\n        }\n\n        public void addFrag(Fragment fragment, String title) {\n            mFragmentList.add(fragment);\n            mFragmentTitleList.add(title);\n        }\n\n        @Override\n        public CharSequence getPageTitle(int position) {\n            return mFragmentTitleList.get(position);\n        }\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/tourguide/android/example/com/tourguide/MainActivity.java	(revision f03211afa00767fcb4f1b80acce2f2ab9c602d40)
++++ app/src/main/java/tourguide/android/example/com/tourguide/MainActivity.java	(revision )
+@@ -45,6 +45,7 @@
+         setSupportActionBar(toolbar);
+         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+ 
++
+         //ViewPager control with tab layout
+         viewPager = (ViewPager) findViewById(R.id.viewpager);
+         setupViewPager(viewPager);
+Index: app/src/main/java/tourguide/android/example/com/tourguide/ItemDetailsActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package tourguide.android.example.com.tourguide;\n\nimport android.content.Intent;\nimport android.graphics.drawable.Drawable;\nimport android.net.Uri;\nimport android.os.Bundle;\nimport android.support.annotation.Nullable;\nimport android.support.v7.app.AppCompatActivity;\nimport android.view.View;\nimport android.widget.ImageView;\nimport android.widget.TextView;\n\n/*\n * Shows a detailed view of the given recommendations/attraction\n * recommendation/attraction data is received through extra data in the intent object\n */\npublic class ItemDetailsActivity extends AppCompatActivity {\n    @Override\n    protected void onCreate(@Nullable Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.activity_detail_page);\n\n        final Item item = getIntent().getParcelableExtra(\"this_item\");\n\n        DetailsViewHolder details = new DetailsViewHolder();\n\n        details.detailPageImage = findViewById(R.id.detail_page_image);\n        details.activityName = findViewById(R.id.activity_name);\n        details.address = findViewById(R.id.address);\n        details.phone = findViewById(R.id.phone);\n        details.website = findViewById(R.id.website);\n        details.detailText = findViewById(R.id.detail_text);\n\n        details.activityName.setText(item.getActivity_name());\n        details.detailText.setText(item.getActivity_details());\n\n        if(showControlIfDataExist(item.getAddress_street(), details.address, R.id.icon_location)) {\n            View.OnClickListener showMaps = new View.OnClickListener() {\n                @Override\n                public void onClick(View v) {\n                    String searchString = item.getActivity_name() + \" \" + item.getAddress_street();\n                    String mapsURL = \"https://www.google.com/maps/search/\" + searchString;\n                    Intent intent = new Intent(android.content.Intent.ACTION_VIEW,\n                            Uri.parse(mapsURL));\n                    startActivity(intent);\n                }\n            };\n            findViewById(R.id.map_launcher).setOnClickListener(showMaps);\n        }\n\n        if(showControlIfDataExist(item.getActivity_phone_number(), details.phone, R.id.icon_phone)) {\n            View.OnClickListener callNumber = new View.OnClickListener() {\n                @Override\n                public void onClick(View v) {\n                    String numberWithoutSpaces = item.getActivity_phone_number().replaceAll(\" \", \"\");\n                    String phoneNumberURI = \"tel:\" + numberWithoutSpaces;\n                    Intent intent = new Intent(Intent.ACTION_DIAL,\n                            Uri.parse(phoneNumberURI));\n                    startActivity(intent);\n                }\n            };\n            findViewById(R.id.call_number).setOnClickListener(callNumber);\n        }\n\n        if(showControlIfDataExist(item.getActivity_website(), details.website, R.id.icon_site)) {\n            View.OnClickListener openSite = new View.OnClickListener() {\n                @Override\n                public void onClick(View v) {\n                    Intent intent = new Intent(Intent.ACTION_VIEW,\n                            Uri.parse(item.getActivity_website()));\n                    startActivity(intent);\n                }\n            };\n            findViewById(R.id.site_launcher).setOnClickListener(openSite);\n        }\n\n        int imageResourceId = item.getImageResourceId();\n        Drawable drawableItemImage = ItemDetailsActivity.this.getResources().getDrawable(imageResourceId);\n        details.detailPageImage.setImageDrawable(drawableItemImage);\n    }\n\n    /*\n     *  Helper function that shows certain controls and the control's corresponding icon controls,\n     *  if the @param data is available and not empty\n     *  @returns true if @param data is available and not empty\n    */\n    private boolean showControlIfDataExist(String data, TextView control, int iconId) {\n        boolean doesDataExist = data != null && !data.isEmpty();\n        if(doesDataExist) {\n            control.setVisibility(View.VISIBLE);\n            findViewById(iconId).setVisibility(View.VISIBLE);\n            control.setText(data);\n        } else {\n            control.setVisibility(View.INVISIBLE);\n            findViewById(iconId).setVisibility(View.INVISIBLE);\n        }\n        return doesDataExist;\n    }\n}\n\n//Place holder for controls in detailview of the attraction/recommendation\nclass DetailsViewHolder {\n    ImageView detailPageImage;\n    TextView activityName;\n    TextView address;\n    TextView phone;\n    TextView website;\n    TextView detailText;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/tourguide/android/example/com/tourguide/ItemDetailsActivity.java	(revision f03211afa00767fcb4f1b80acce2f2ab9c602d40)
++++ app/src/main/java/tourguide/android/example/com/tourguide/ItemDetailsActivity.java	(revision )
+@@ -6,6 +6,7 @@
+ import android.os.Bundle;
+ import android.support.annotation.Nullable;
+ import android.support.v7.app.AppCompatActivity;
++import android.support.v7.widget.Toolbar;
+ import android.view.View;
+ import android.widget.ImageView;
+ import android.widget.TextView;
+@@ -15,10 +16,15 @@
+  * recommendation/attraction data is received through extra data in the intent object
+  */
+ public class ItemDetailsActivity extends AppCompatActivity {
++    private Toolbar toolbar;
++
+     @Override
+     protected void onCreate(@Nullable Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_detail_page);
++        toolbar = (Toolbar) findViewById(R.id.toolbar);
++        setSupportActionBar(toolbar);
++        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+ 
+         final Item item = getIntent().getParcelableExtra("this_item");
+ 
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    package=\"tourguide.android.example.com.tourguide\">\n\n    <application\n        android:allowBackup=\"true\"\n        android:icon=\"@mipmap/ic_launcher\"\n        android:label=\"@string/app_name\"\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\n        android:supportsRtl=\"true\"\n        android:theme=\"@style/AppTheme\">\n        <activity\n            android:name=\"tourguide.android.example.com.tourguide.MainActivity\"\n            android:label=\"@string/app_name\"\n            android:theme=\"@style/AppTheme.NoActionBar\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\" />\n\n                <category android:name=\"android.intent.category.LAUNCHER\" />\n            </intent-filter>\n        </activity>\n\n        <activity android:name=\"tourguide.android.example.com.tourguide.ItemListActivity\" />\n        <activity android:name=\"tourguide.android.example.com.tourguide.ItemDetailsActivity\" />\n\n    </application>\n\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(revision f03211afa00767fcb4f1b80acce2f2ab9c602d40)
++++ app/src/main/AndroidManifest.xml	(revision )
+@@ -20,8 +20,22 @@
+             </intent-filter>
+         </activity>
+ 
+-        <activity android:name="tourguide.android.example.com.tourguide.ItemListActivity" />
+-        <activity android:name="tourguide.android.example.com.tourguide.ItemDetailsActivity" />
++        <activity android:name="tourguide.android.example.com.tourguide.ItemListActivity"
++            android:parentActivityName=".MainActivity">
++            <!-- Parent activity meta-data to support 4.0 and lower -->
++            <meta-data
++                android:name="android.support.PARENT_ACTIVITY"
++                android:value=".MainActivity"/>
++        </activity>
++
++        <activity android:name="tourguide.android.example.com.tourguide.ItemDetailsActivity"
++            android:parentActivityName=".MainActivity">
++            <!-- Parent activity meta-data to support 4.0 and lower -->
++            <meta-data
++                android:name="android.support.PARENT_ACTIVITY"
++                android:value=".MainActivity"/>
++
++        </activity>
+ 
+     </application>
+ 
+Index: app/src/main/java/tourguide/android/example/com/tourguide/ItemListActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package tourguide.android.example.com.tourguide;\n\n\nimport android.content.Intent;\nimport android.os.Bundle;\nimport android.support.v7.app.AppCompatActivity;\nimport android.widget.ListView;\n\nimport java.util.List;\n\n/*\n * Shows a list view of recommendations/attraction for the given subcategory\n * recommendation/attraction list data is received through extra data in the intent object\n */\npublic class ItemListActivity extends AppCompatActivity {\n\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.listview);\n        final ListView listview = (ListView) findViewById(R.id.itemlist);\n        Intent detailPageIntent = new Intent(ItemListActivity.this, ItemDetailsActivity.class);\n        List<Item> items = getIntent().getParcelableArrayListExtra(\"tourguide.android.example.com.tourguide.subcategory_list_items\");\n        ItemListAdapter adapter = new ItemListAdapter(this, items, detailPageIntent);\n        listview.setAdapter(adapter);\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/tourguide/android/example/com/tourguide/ItemListActivity.java	(revision f03211afa00767fcb4f1b80acce2f2ab9c602d40)
++++ app/src/main/java/tourguide/android/example/com/tourguide/ItemListActivity.java	(revision )
+@@ -4,6 +4,7 @@
+ import android.content.Intent;
+ import android.os.Bundle;
+ import android.support.v7.app.AppCompatActivity;
++import android.support.v7.widget.Toolbar;
+ import android.widget.ListView;
+ 
+ import java.util.List;
+@@ -13,11 +14,15 @@
+  * recommendation/attraction list data is received through extra data in the intent object
+  */
+ public class ItemListActivity extends AppCompatActivity {
++    private Toolbar toolbar;
+ 
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.listview);
++        toolbar = (Toolbar) findViewById(R.id.toolbar);
++        setSupportActionBar(toolbar);
++        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+         final ListView listview = (ListView) findViewById(R.id.itemlist);
+         Intent detailPageIntent = new Intent(ItemListActivity.this, ItemDetailsActivity.class);
+         List<Item> items = getIntent().getParcelableArrayListExtra("tourguide.android.example.com.tourguide.subcategory_list_items");

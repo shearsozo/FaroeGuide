@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/homepage_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/toolbar_image"/>
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/the_Faroe_Islands"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/tvDoon"
+            android:textColor="#8c144c"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:background="#ECECEC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homepage_image"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@android:color/holo_green_dark"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/imageView" />
+    </RelativeLayout>
+</RelativeLayout>
